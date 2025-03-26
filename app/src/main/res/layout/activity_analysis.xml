@@ -5,10 +5,120 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Start Capture Button -->
-    <Button
-        android:id="@+id/start_capture_button"
-        android:layout_width="match_parent"
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Capture" />
+        android:columnCount="2"
+        android:padding="8dp">
+
+        <!-- First item -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/item_background">
+
+            <ImageView
+                android:id="@+id/grid_image_1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="Squats"
+                android:src="@drawable/pose_squats" />
+
+            <TextView
+                android:id="@+id/grid_text_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Squats"
+                android:textSize="14sp"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- Second item -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/item_background">
+
+            <ImageView
+                android:id="@+id/grid_image_2"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/pose_jumping"
+                android:contentDescription="Jumping Jack" />
+
+            <TextView
+                android:id="@+id/grid_text_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Jumping Jack"
+                android:textSize="14sp"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- Third item -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/item_background">
+
+            <ImageView
+                android:id="@+id/grid_image_3"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="Push Up"
+                android:src="@drawable/pose_pushup" />
+
+            <TextView
+                android:id="@+id/grid_text_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Push Up"
+                android:textSize="14sp"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- Fourth item -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/item_background">
+
+            <ImageView
+                android:id="@+id/grid_image_4"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/pose_situp"
+                android:contentDescription="Sit Up" />
+
+            <TextView
+                android:id="@+id/grid_text_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sit Up"
+                android:textSize="14sp"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+    </GridLayout>
 </LinearLayout>
