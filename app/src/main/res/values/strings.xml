@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FYP</string>
+    <string name="welcomeText">HI</string>
+    <string name="invalid_post_id">Invalid Post ID</string>
+    <string name="failed_to_load_post">Failed to load post details</string>
+    <string name="likes_count">%1$d Likes</string>
+    <string name="like_toggled">Like toggled successfully</string>
+    <string name="failed_to_toggle_like">Failed to toggle like</string>
+    <string name="error_message">Error: %1$s</string>
+    <string name="failed_to_load_posts">Failed to load posts</string>
+    <string name="post_saved_successfully">Post saved successfully</string>
+    <string name="failed_to_save_post">Failed to save post</string>
+    <string name="empty_fields_error">Title and content cannot be empty</string>
+    <string-array name="plan_types">
+        <item>Yoga</item>
+        <item>HIIT</item>
+        <item>Strength</item>
+    </string-array>
+
+    <string-array name="plan_levels">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+</resources>

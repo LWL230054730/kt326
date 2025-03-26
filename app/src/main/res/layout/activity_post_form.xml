@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <View
+        android:id="@+id/safe_area"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="#F5F5F5" />
+
+    <!-- 返回按鈕 -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:src="@drawable/ic_back"
+        android:contentDescription="Back Button" />
+
+    <!-- 主內容區域 -->
+    <LinearLayout
+        android:id="@+id/content_area"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/back_button"
+        android:layout_above="@id/nav_bar"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 分區選擇器 -->
+        <Spinner
+            android:id="@+id/board_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 標題輸入框 -->
+        <EditText
+            android:id="@+id/title_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter title"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 內容輸入框 -->
+        <EditText
+            android:id="@+id/content_input"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:hint="Enter content"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+        <!-- 發佈按鈕 -->
+        <Button
+            android:id="@+id/post_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:textColor="#FFFFFF"
+            android:background="@color/primaryColor"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <!-- 固定在底部的通用導航欄 -->
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#F5F5F5"
+        android:padding="8dp">
+
+        <include
+            android:id="@+id/navBar"
+            layout="@layout/nav_bar" />
+    </LinearLayout>
+</RelativeLayout>

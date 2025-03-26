@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="?attr/selectableItemBackground">
+
+    <!-- 標題 -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <!-- 內容 -->
+    <TextView
+        android:id="@+id/contentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Post Content"
+        android:textSize="14sp"
+        android:paddingBottom="8dp" />
+
+    <!-- 點贊數 -->
+    <TextView
+        android:id="@+id/likeCountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 Likes"
+        android:textSize="12sp"
+        android:paddingBottom="2dp" />
+
+    <!-- 評論數 -->
+    <TextView
+        android:id="@+id/commentCountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 Comments"
+        android:textSize="12sp"
+        android:paddingBottom="2dp" />
+
+    <!-- 瀏覽數 -->
+    <TextView
+        android:id="@+id/viewCountTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 Views"
+        android:textSize="12sp" />
+</LinearLayout>

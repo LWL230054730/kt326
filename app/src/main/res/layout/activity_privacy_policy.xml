@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200EE"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!-- Privacy Policy Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/privacyContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy\n\nYour privacy is important to us. This Privacy Policy explains how we collect, use, and protect your personal information.\n\n1. Data Collection\nWe may collect personal data such as your name, email address, and phone number.\n\n2. Data Usage\nWe use your data to provide personalized services and improve your experience.\n\n3. Data Sharing\nWe do not share your data with third parties without your consent.\n\nFor any inquiries, please contact us at support@example.com."
+            android:textSize="16sp"
+            android:textColor="#000000" />
+    </ScrollView>
+</LinearLayout>
